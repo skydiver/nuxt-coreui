@@ -17,6 +17,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
+   ** Set the link active classes
+   */
+  router: {
+    linkActiveClass: 'active open'
+  },
+  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
