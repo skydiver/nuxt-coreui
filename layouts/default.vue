@@ -1,11 +1,16 @@
 <template>
-  <default-container>
-    <nuxt />
-  </default-container>
+  <client-only placeholder="Loading...">
+    <default-container>
+      <nuxt />
+    </default-container>
+  </client-only>
 </template>
 
 <script>
-import DefaultContainer from '~/components/containers/DefaultContainer';
+const DefaultContainer = async () => {
+  // eslint-disable-next-line no-return-await
+  return await import('~/components/containers/DefaultContainer');
+};
 
 export default {
   components: {
@@ -15,13 +20,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@coreui/icons/css/coreui-icons.min.css';
 $fa-font-path: '~font-awesome/fonts/';
-@import 'font-awesome/scss/font-awesome.scss';
 $simple-line-font-path: '~simple-line-icons/fonts/';
+
+@import '@coreui/icons/css/coreui-icons.min.css';
+@import 'font-awesome/scss/font-awesome.scss';
 @import 'simple-line-icons/scss/simple-line-icons.scss';
 @import 'flag-icon-css/css/flag-icon.min.css';
 @import 'bootstrap-vue/dist/bootstrap-vue.css';
-// Import Main styles for this application
 @import 'assets/scss/style';
 </style>

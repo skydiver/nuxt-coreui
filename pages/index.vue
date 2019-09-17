@@ -1,11 +1,5 @@
 <template>
-  <div class="container">
-    hello word
+  <div>
+    <h1>hello world</h1>
   </div>
 </template>
-
-<script>
-export default {
-  components: {}
-};
-</script>
