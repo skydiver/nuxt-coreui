@@ -27,7 +27,7 @@
     "@nuxtjs/axios": "^5.9.5",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "2.0.0-rc.24",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "flag-icon-css": "^3.4.6",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.13.1",
